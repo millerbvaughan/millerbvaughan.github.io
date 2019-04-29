@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+
+.header {
+  background: #7698e8;
+}
+
+.top-background {
+  position: relative;
+}
+
+.mountains {
+  width: 100%;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.me {
+  position: absolute;
+  width: 15%;
+}
