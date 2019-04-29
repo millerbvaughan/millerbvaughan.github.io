@@ -3,7 +3,10 @@
 }
 
 .header {
-  background: #7698e8;
+  background: #bfe2ee;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .top-background {
@@ -14,9 +17,17 @@
   width: 100%;
   opacity: 0.5;
   position: absolute;
+  z-index: -1;
 }
 
 .me {
-  position: absolute;
-  width: 15%;
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+
+.header-text {
+  text-align: center;
 }
