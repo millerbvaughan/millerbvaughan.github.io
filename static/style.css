@@ -2,17 +2,26 @@
   margin: 0;
 }
 
+body {
+}
+
 .navbar {
-  background: white;
   position: fixed;
   width: 100%;
   padding-top: 15px;
+  overflow: hidden;
 }
 
 .navbar a {
   text-decoration: none;
-  color: black;
+  color: #858585;
   font-size: 20px;
+  margin: auto;
+  padding: 7px;
+}
+
+.navbar a:hover {
+  color: black;
 }
 
 .navbar-left {
@@ -25,8 +34,17 @@
   padding-right: 15px;
 }
 
-.navbar-right a {
-  padding: 5px;
+.icon {
+  display: none;
+}
+
+@media screen and (max-width:600px) {
+  .navbar-right a {
+    display: none;
+  }
+  .navbar-right a.icon {
+    display: block;
+  }
 }
 
 .landing {
