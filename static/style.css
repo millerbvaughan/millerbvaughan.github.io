@@ -16,8 +16,9 @@ body {
   text-decoration: none;
   color: #858585;
   font-size: 20px;
-  margin: auto;
   padding: 7px;
+  text-align: center;
+  display: inline-block;
 }
 
 .navbar a:hover {
@@ -34,7 +35,7 @@ body {
   padding-right: 15px;
 }
 
-.icon {
+.navbar .icon {
   display: none;
 }
 
@@ -44,6 +45,23 @@ body {
   }
   .navbar-right a.icon {
     display: block;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .navbar-right.responsive {
+    position: relative;
+  }
+  .navbar-right.responsive a.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .navbar-right.responsive a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src='scripts/script.js'></script>
     <title>Miller Vaughan</title>
   </head>
   <body>
@@ -12,12 +14,12 @@
       <div class="navbar-left">
         <a href="#">MV</a>
       </div>
-      <div class="navbar-right">
+      <div class="navbar-right" id="navRight">
         <a href="#">About</a>
         <a href="#">Work</a>
         <a href="#">Projects</a>
         <a href="#">Fun</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
