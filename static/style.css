@@ -9,7 +9,6 @@ body {
   position: fixed;
   width: 100%;
   padding-top: 15px;
-  overflow: hidden;
 }
 
 .navbar a {
@@ -18,7 +17,8 @@ body {
   font-size: 20px;
   padding: 7px;
   text-align: center;
-  display: inline-block;
+  display: block;
+  float: left;
 }
 
 .navbar a:hover {
@@ -33,9 +33,10 @@ body {
 .navbar-right {
   float: right;
   padding-right: 15px;
+  overflow: hidden;
 }
 
-.navbar .icon {
+.navbar-right .icon {
   display: none;
 }
 
@@ -45,6 +46,7 @@ body {
   }
   .navbar-right a.icon {
     display: block;
+    float: right;
   }
 }
 
@@ -54,19 +56,18 @@ body {
   }
   .navbar-right.responsive a.icon {
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
   }
   .navbar-right.responsive a {
     float: none;
     display: block;
-    width: 100%;
-    text-align: center;
+    text-align: left;
   }
 }
 
 .landing {
   position: relative;
   top: 150px;
-  text-align: center;
+  padding-left: 15px;
 }
