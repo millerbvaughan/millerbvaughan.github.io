@@ -3,12 +3,15 @@
 }
 
 body {
+  background-color: #d9ce8b;
 }
 
 .navbar {
   position: fixed;
   width: 100%;
   padding-top: 15px;
+  background-color: #d9ce8b;
+  z-index: 1;
 }
 
 .navbar a {
@@ -46,7 +49,7 @@ body {
   }
   .navbar-right a.icon {
     display: block;
-    float: right;
+    float: none;
   }
 }
 
@@ -68,6 +71,37 @@ body {
 
 .landing {
   position: relative;
-  top: 150px;
-  padding-left: 15px;
+  top: 200px;
+  width: 95%;
+  margin: auto;
+}
+
+.bio {
+  position: relative;
+  top: 350px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.bio-text {
+  background-color: black;
+  height: 450px;
+  flex-grow: 1;
+}
+
+.bio-pic img {
+  flex-grow: 1;
+  height: 400px;
+}
+
+@media screen and (max-width:600px) {
+  .bio-text {
+    flex: 1 100%;
+    order: 2;
+  }
+  .bio-pic {
+    flex: 1 100%;
+    order: 1;
+  }
+
 }
