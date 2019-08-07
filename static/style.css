@@ -71,27 +71,27 @@ body {
 
 .landing {
   position: relative;
-  top: 200px;
+  top: 110px;
   width: 95%;
   margin: auto;
 }
 
 .bio {
   position: relative;
-  top: 350px;
+  top: 220px;
   display: flex;
   flex-flow: row wrap;
 }
 
 .bio-text {
-  background-color: black;
-  height: 450px;
+  background-color: #baced6;
+  height: 500px;
   flex-grow: 1;
 }
 
 .bio-pic img {
   flex-grow: 1;
-  height: 400px;
+  height: 500px;
 }
 
 @media screen and (max-width:600px) {
