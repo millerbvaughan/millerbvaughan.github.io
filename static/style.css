@@ -10,8 +10,8 @@ body {
   position: fixed;
   width: 100%;
   padding-top: 15px;
-  background-color: whitesmoke;
   z-index: 1;
+  background-color: whitesmoke;
 }
 
 .navbar a {
@@ -87,11 +87,22 @@ body {
   background-color: #baced6;
   height: 500px;
   flex-grow: 1;
+  width: 50%;
+}
+
+.bio-text p {
+  padding: 30px 30px 30px 30px;
+  font-size: 20px;
+}
+
+.bio-pic {
+  flex-grow: 1;
+  width: 50%;
 }
 
 .bio-pic img {
-  flex-grow: 1;
-  height: 500px;
+  max-height: 500px;
+  min-width: 750px;
 }
 
 @media screen and (max-width:600px) {
@@ -99,7 +110,7 @@ body {
     flex: 1 100%;
     order: 2;
   }
-  .bio-pic {
+  .bio-pic img{
     flex: 1 100%;
     order: 1;
   }
