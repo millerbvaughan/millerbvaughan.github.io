@@ -3,14 +3,14 @@
 }
 
 body {
-  background-color: #d9ce8b;
+  background-color: whitesmoke;
 }
 
 .navbar {
   position: fixed;
   width: 100%;
   padding-top: 15px;
-  background-color: #d9ce8b;
+  background-color: whitesmoke;
   z-index: 1;
 }
 
