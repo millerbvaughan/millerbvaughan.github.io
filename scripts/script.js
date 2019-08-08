@@ -8,6 +8,7 @@ function toggleNavbar() {
   }
 }
 
+/*
 $(document).scroll(function() {
   if ($(window).scrollTop() === 0) {
     $('.navbar').css({"-moz-box-shadow": "0px 0px",
@@ -31,3 +32,5 @@ $(document).scroll(function() {
                       "box-shadow": "0 8px 6px -6px rgba(0,0,0,0.3)"});
   }
 })
+
+*/
