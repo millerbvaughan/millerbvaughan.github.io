@@ -147,7 +147,7 @@ body {
   .bio-pic img{
     flex: 1 100%;
     order: 1;
-    width: 90vw;
+    width: 50vw;
     margin: auto;
   }
 }
