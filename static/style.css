@@ -74,12 +74,15 @@ body {
   position: relative;
   top: 110px;
   padding-left: 30px;
-  text-align: center;
+}
+
+.section-title {
+  font-size:50px;
 }
 
 .content {
   position: relative;
-  top: 150px;
+  top: 115px;
   display: flex;
   flex-flow: row wrap;
 }
@@ -109,8 +112,9 @@ body {
 }
 
 .bio-pic img {
-  width: 40vw;
+  width: 35vw;
   display: block;
+  margin: auto;
 }
 
 @media screen and (max-width:600px) {
@@ -121,13 +125,23 @@ body {
   .bio-pic img{
     flex: 1 100%;
     order: 1;
-    width: 100vw;
+    width: 90vw;
+    margin: auto;
   }
 }
 
-.work {
+#experience {
   width: 100vw;
   height: 500px;
-  background-color: #baced6;
+  background-color: #e3e2ff;
   order: 3;
+}
+
+#experience h1{
+  padding: 30px 0 0 30px;
+}
+
+.job {
+  width: 80%;
+  float: right;
 }
