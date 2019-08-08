@@ -84,7 +84,7 @@ body {
 
 .landing-text {
   position: absolute;
-  top: 200px;
+  bottom: 30%;
   color: white;
   padding-left: 30px;
 }
