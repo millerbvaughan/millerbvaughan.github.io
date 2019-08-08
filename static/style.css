@@ -86,10 +86,15 @@ body {
   position: absolute;
   top: 200px;
   color: white;
+  padding-left: 30px;
 }
 
-.current-position {
-  padding-left: 30px;
+.landing-title {
+  font-size: 5vw;
+}
+
+.landing-position {
+  font-size: 3vw;
 }
 
 .section-title {
