@@ -140,6 +140,12 @@ body {
 }
 
 @media screen and (max-width:600px) {
+  .landing {
+    top: 52px;
+  }
+  .content {
+    top: 72px;
+  }
   .bio-text {
     flex: 1 100%;
     order: 2;
