@@ -74,22 +74,26 @@ body {
   position: relative;
   top: 110px;
   padding-left: 30px;
+  text-align: center;
 }
 
 .content {
   position: relative;
-  top: 220px;
+  top: 150px;
   display: flex;
   flex-flow: row wrap;
 }
 
 #opener {
   text-align: center;
+  font-size: 25px;
 }
 
 .bio-text {
   flex-grow: 1;
   width: 50%;
+  justify-content: center;
+  margin: auto;
 }
 
 .bio-text p {
@@ -101,10 +105,11 @@ body {
   flex-grow: 1;
   justify-content: center;
   margin: auto;
+  padding-bottom: 10px;
 }
 
 .bio-pic img {
-  width: 50vw;
+  width: 40vw;
   display: block;
 }
 
