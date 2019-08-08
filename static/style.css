@@ -144,6 +144,12 @@ body {
     flex: 1 100%;
     order: 2;
   }
+  .bio-text p{
+    font-size: 15px;
+  }
+  #opener {
+    font-size: 20px;
+  }
   .bio-pic img{
     flex: 1 100%;
     order: 1;
