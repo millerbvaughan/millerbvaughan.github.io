@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 body {
@@ -76,25 +76,44 @@ body {
 
 .landing {
   position: relative;
-}
-
-.landing img{
+  background-color: rgb(0, 0, 0);
   width: 100vw;
+  height: 100vh;
+  text-align: center;
 }
 
-.landing-text {
+#welcome {
   position: absolute;
-  top: 55%;
   color: white;
-  padding-left: 30px;
+  font-size: 15vh;
+  left: 0;
+  right: 0;
+  top: 40%;
+  
 }
 
-.landing-title {
-  font-size: 5vw;
+#welcome::after {
+  content: "";
+  right: -15px;
+  display: inline-block;
+  background-color: #606060;
+  vertical-align: top;
+  width: 3vw;
+  height: 15vh;
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
 }
 
-.landing-position {
-  font-size: 3vw;
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
 
 .section-title {
@@ -124,6 +143,7 @@ body {
 .bio-text p {
   padding: 15px 30px 15px 30px;
   font-size: 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .bio-pic {
@@ -137,6 +157,12 @@ body {
   width: 35vw;
   display: block;
   margin: auto;
+}
+
+.code-font {
+  background-color: rgba(230, 230, 231, 0.829);
+  font-family: 'Ubuntu Mono', monospace;
+  padding: 0 6px 0 6px;
 }
 
 @media screen and (max-width:600px) {

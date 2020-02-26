@@ -25,7 +25,7 @@ function setWelcome() {
       $('#welcome').text($('#welcome').text() + wel[i]);
       ++i;
     }
-  }, 700)
+  }, 400)
 
   setTimeout(function() {
     var deleteInterval = setInterval(function() {
@@ -36,8 +36,8 @@ function setWelcome() {
       else {
         clearInterval(deleteInterval)
       }
-    }, 200)
-  }, 2100)
+    }, 150)
+  }, 1200)
 
   var welcome = ['W', 'e', 'l', 'c', 'o', 'm', 'e', '!'];
   var j = 0;
@@ -47,8 +47,8 @@ function setWelcome() {
         $('#welcome').text($('#welcome').text() + welcome[j]);
         ++j;
       }
-    }, 500)
-  }, 2700)
+    }, 300)
+  }, 1650)
 }
 
 $(document).ready(function() {
