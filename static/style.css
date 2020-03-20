@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Cutive Mono', monospace;
+  /*roboto mono*/
 }
 
 body {
@@ -104,7 +105,7 @@ body {
 
 .content {
   position: relative;
-  top: 20px;
+  
   display: flex;
   flex-flow: row wrap;
 }
