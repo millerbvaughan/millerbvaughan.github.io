@@ -8,15 +8,6 @@ function toggleNavbar() {
   }
 }
 
-$(document).scroll(function() {
-  //console.log(parseFloat($('.landing-text').css('top')));
-  //var landingHeight = $('.landing').height();
-  //var textHeight = $('.landing-text').height();
-
-
-  //$('.landing-text').css('top', 292 - parseFloat($('.landing-text').css('top')) + 0.02*window.scrollY + "px");
-})
-
 function setWelcome() {
   var wel = ['w', 'e', 'l'];
   var i = 0;
