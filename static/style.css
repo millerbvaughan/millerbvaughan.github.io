@@ -1,11 +1,10 @@
 * {
   margin: 0;
-  font-family: 'Cutive Mono', monospace;
-  /*roboto mono*/
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 body {
-  background-color: white;
+  background-color: black;
 }
 
 .navbar {
@@ -13,7 +12,7 @@ body {
   width: 100%;
   padding-top: 15px;
   z-index: 1;
-  background-color: white;
+  background-color: black;
   opacity: 0.9;
   -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
   -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
@@ -31,7 +30,7 @@ body {
 }
 
 .navbar a:hover {
-  color: black;
+  color: white;
 }
 
 .navbar-left {
@@ -76,126 +75,65 @@ body {
 }
 
 .landing {
-  position: relative;
-}
-
-.landing img{
-  width: 100vw;
-}
-
-.landing-text {
-  position: absolute;
-  bottom: 30%;
-  color: white;
-  padding-left: 30px;
-}
-
-.landing-title {
-  font-size: 5vw;
-}
-
-.landing-position {
-  font-size: 2.5vw;
-}
-
-.section-title {
-  font-size:50px;
-  padding: 30px 0 0 30px;
-}
-
-.content {
-  position: relative;
-  
+  background-color: black;
+  width: 80vw;
+  height: 100vh;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 25vh 0 0 0;
 }
 
-#opener {
-  text-align: center;
-  font-size: 30px;
+.welcome-and-pic {
+  height: 100%
+}
+
+.welcome-and-pic img {
+  height: 65%;
+  padding-top: 10vh;
+}
+
+#welcome {
+  color: white;
+  font-size: 8vh;
+}
+
+#welcome::after {
+  content: "";
+  right: -15px;
+  display: inline-block;
+  background-color: #606060;
+  vertical-align: top;
+  width: 3vw;
+  height: 8vh;
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+.bio-pic img{
+  height: 18%;
 }
 
 .bio-text {
-  flex-grow: 1;
-  width: 50%;
-  justify-content: center;
-  margin: auto;
+  color: white;
+  font-size: 3vh;
+  top: 19%;
+  max-width: 30%;
 }
 
 .bio-text p {
-  padding: 15px 30px 15px 30px;
-  font-size: 20px;
-  font-family: 'Raleway', sans-serif;
-}
-
-.bio-pic {
-  flex-grow: 1;
-  justify-content: center;
-  margin: auto;
-  padding-bottom: 10px;
-}
-
-.bio-pic img {
-  width: 35vw;
-  display: block;
-  margin: auto;
-}
-
-.code-font {
-  background-color: rgba(230, 230, 231, 0.829);
-  font-family: 'Ubuntu Mono', monospace;
-  padding: 0 6px 0 6px;
-}
-
-@media screen and (max-width:600px) {
-  .landing {
-    top: 52px;
-  }
-  .content {
-    top: 72px;
-  }
-  .bio-text {
-    flex: 1 100%;
-    order: 2;
-  }
-  .bio-text p{
-    font-size: 15px;
-  }
-  #opener {
-    font-size: 20px;
-  }
-  .bio-pic img{
-    flex: 1 100%;
-    order: 1;
-    width: 50vw;
-    margin: auto;
-  }
-}
-
-#experience {
-  width: 100vw;
-  height: 500px;
-  -background-color: #e3e2ff;
-  background-color: whitesmoke;
-  order: 3;
-}
-
-.job {
-  width: 95%;
-  float: right;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 30px 0 30px 0;
-}
-
-.job-heading {
-  flex-grow: 1;
-}
-
-.job-heading h1{
-  font-size: 25px;
-}
-
-.job-content {
-  flex-grow: 3;
+  margin: 20px 0 20px 0;
 }

@@ -8,29 +8,40 @@ function toggleNavbar() {
   }
 }
 
-/*
-$(document).scroll(function() {
-  if ($(window).scrollTop() === 0) {
-    $('.navbar').css({"-moz-box-shadow": "0px 0px",
-                      "-webkit-box-shadow": "0px 0px",
-                      "box-shadow": "0px 0px"});
-  }
-  if ($(window).scrollTop() > 5) {
-    $('.navbar').css({"-moz-box-shadow": "0 8px 6px -6px rgba(0,0,0,0.1)",
-                      "-webkit-box-shadow": "0 8px 6px -6px rgba(0,0,0,0.1)",
-                      "box-shadow": "0 8px 6px -6px rgba(0,0,0,0.1)"});
-  }
-  if ($(window).scrollTop() > 10) {
-    $('.navbar').css({"-moz-box-shadow": "0 8px 6px -6px rgba(0,0,0,0.2)",
-                      "-webkit-box-shadow": "0 8px 6px -6px rgba(0,0,0,0.2)",
-                      "box-shadow": "0 8px 6px -6px rgba(0,0,0,0.2)"});
-  }
+function setWelcome() {
+  var wel = ['w', 'e', 'l'];
+  var i = 0;
+  setInterval(function() {
+    if (i < wel.length) {
+      $('#welcome').text($('#welcome').text() + wel[i]);
+      ++i;
+    }
+  }, 400)
 
-  if ($(window).scrollTop() > 15) {
-    $('.navbar').css({"-moz-box-shadow": "0 8px 6px -6px rgba(0,0,0,0.3)",
-                      "-webkit-box-shadow": "0 8px 6px -6px rgba(0,0,0,0.3)",
-                      "box-shadow": "0 8px 6px -6px rgba(0,0,0,0.3)"});
-  }
+  setTimeout(function() {
+    var deleteInterval = setInterval(function() {
+      if (String($('#welcome').text()).length) {
+        $('#welcome').text(String($('#welcome').text()).slice(0, -1));
+        console.log('called')
+      }
+      else {
+        clearInterval(deleteInterval)
+      }
+    }, 150)
+  }, 1200)
+
+  var welcome = ['W', 'e', 'l', 'c', 'o', 'm', 'e', '!'];
+  var j = 0;
+  setTimeout(function() {
+    setInterval(function() {
+      if (j < welcome.length) {
+        $('#welcome').text($('#welcome').text() + welcome[j]);
+        ++j;
+      }
+    }, 300)
+  }, 1650)
+}
+
+$(document).ready(function() {
+  setWelcome();
 })
-
-*/
