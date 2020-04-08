@@ -75,18 +75,28 @@ body {
 }
 
 .landing {
-  position: relative;
   background-color: black;
-  width: 100vw;
+  width: 80vw;
   height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 25vh 0 0 0;
+}
+
+.welcome-and-pic {
+  height: 100%
+}
+
+.welcome-and-pic img {
+  height: 65%;
+  padding-top: 10vh;
 }
 
 #welcome {
-  position: absolute;
   color: white;
   font-size: 8vh;
-  left: 15%;
-  top: 20%;
 }
 
 #welcome::after {
@@ -113,26 +123,13 @@ body {
   100% { opacity: 1.0; }
 }
 
-.bio {
-  position: absolute;
-  top: 40%;
-  left: 15%;
-  display: flex;
-}
-
-.bio-pic {
-  flex-grow: 2;
-}
-
 .bio-pic img{
-  height: 20%;
+  height: 18%;
 }
 
 .bio-text {
-  position: absolute;
   color: white;
   font-size: 3vh;
-  right: 7%;
   top: 19%;
   max-width: 30%;
 }
