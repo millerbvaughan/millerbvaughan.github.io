@@ -141,7 +141,7 @@ body {
   margin: 20px 0 20px 0;
 }
 
-@media screen and (max-width:1150px) {
+@media screen and (max-width:1050px) {
   .welcome-and-pic {
     height: 8vh;
   }
@@ -170,7 +170,5 @@ body {
 @media screen and (max-width:650px) {
   .bio-pic-mobile img {
     height: 70%;
-  }
-  .bio-pic-mobile {
   }
 }
