@@ -75,14 +75,13 @@ body {
 }
 
 .landing {
-  background-color: black;
   width: 77vw;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0 auto;
-  padding: 25vh 0 0 0;
+  padding: 25vh 0 10vh 0;
 }
 
 .welcome-and-pic {
@@ -90,8 +89,8 @@ body {
 }
 
 .welcome-and-pic img {
-  height: 65%;
-  padding-top: 10vh;
+  height: 63vh;
+  padding-top: 15vh;
 }
 
 #welcome {
@@ -162,13 +161,47 @@ body {
 
   .bio-pic-mobile img {
     display: block;
-    height: 85%;
+    height: 60vh;
     margin: 0 auto;
   }
 }
 
 @media screen and (max-width:650px) {
   .bio-pic-mobile img {
-    height: 70%;
+    height: 50vh;
   }
+}
+
+.experience {
+  color: white;
+  width: 77vw;
+  margin: 0 auto;
+  text-align: right;
+  padding-right: 10%;;
+}
+
+.experience h1 {
+  font-size: 3vh;
+  padding-right: 15%;
+}
+
+.experience h3 {
+  font-size: 4.5vh;
+  padding-right: 10%;
+  margin: 35px 0 50px;
+}
+
+.experience-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0 30px 0;
+}
+
+.title {
+  text-align: right;
+  width:40%;
+}
+
+.experience-section .examples {
+  width: 40%;
 }
